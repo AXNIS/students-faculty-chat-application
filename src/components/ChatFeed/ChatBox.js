@@ -6,6 +6,22 @@ const ChatBox = (props) => {
   const { chats, activeChat, userName, messages } = props;
   const chat = chats && chats[activeChat]; // If chats exists
 
+  const renderReadReceipts = (message, isMyMsg) => {
+    return chat.people.map(
+      //map over people who read the message
+      (person, index) =>
+        person.last_read === message.id && (
+          <div
+            key={`read_${index}`}
+            className="read-receipt"
+            style={{
+              float: isMyMsg ? "right" : "left",
+              backgroundImage: `url(${person?.person?.avatar})`,
+            }}
+          />
+        )
+    );
+  };
   const generatingMessages = () => {
     const keys = Object.keys(messages); // keys are the IDs of the specific msgs
 
@@ -30,7 +46,7 @@ const ChatBox = (props) => {
               marginLeft: isMyMsg ? "0px" : "68px",
             }}
           >
-            read-receipts
+            {renderReadReceipts(message, isMyMsg)}
           </div>
         </div>
       );
