@@ -6,6 +6,12 @@
   letter-spacing: 0.5px;
 }
 
+.whole-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .ce-chat-list {
   background-color: rgb(240, 240, 240) !important;
 }
@@ -298,4 +304,16 @@
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.logout-button-box {
+  background-color: rgb(117, 84, 160);
+}
+
+.logout-button {
+  font-size: large;
+  border-color: blueviolet;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
 }
