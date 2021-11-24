@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const projectID = "a8fce3be-91ef-4f85-be73-b4edae85130c";
+const projectID = "a8fce3be-91ef-4f85-be73-b4edae85130c"; // ChatEngine ID
 
 const LoginForm = () => {
   const [username, setUsername] = useState("");
@@ -31,7 +31,7 @@ const LoginForm = () => {
       window.location.reload();
       setError("");
     } catch (err) {
-      // error -> try with the new username...
+      // error -> try with the new username
       setError("Incorrect credentials");
     }
   };

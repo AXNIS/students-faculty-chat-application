@@ -1,5 +1,6 @@
 const MyMsg = ({ message }) => {
   if (message.attachments && message.attachments.length > 0) {
+    // To check if it is a message or an attachment image
     return (
       <img
         src={message.attachments[0].file}

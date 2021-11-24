@@ -12,7 +12,7 @@ const TheirMsg = ({ message, lastMessage }) => {
           }}
         />
       )}
-      {message.attachments && message.attachments.length > 0 ? (
+      {message.attachments && message.attachments.length > 0 ? ( // To check if it is a message or an attachment image
         <img
           src={message.attachments[0].file}
           alt="message-attachment"

@@ -1,6 +1,6 @@
-import MsgForm from "./MsgForm";
-import MyMsg from "./MyMsg";
-import TheirMsg from "./TheirMsg";
+import MsgForm from "./Messages/MsgForm";
+import MyMsg from "./Messages/MyMsg";
+import TheirMsg from "./Messages/TheirMsg";
 
 const ChatBox = (props) => {
   const { chats, activeChat, userName, messages } = props;

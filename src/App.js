@@ -1,28 +1,27 @@
-import { ChatEngine } from "react-chat-engine";
-import "./App.css";
-import ChatBox from "./components/ChatFeed/ChatBox";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
 import LoginForm from "./components/LoginForm";
-import LogoutButton from "./components/LogoutButton";
+import ButtonBox from "./components/Buttons/ButtonBox";
+import ChatEngineComponent from "./components/ChatFeed/ChatEngineComponent";
+import Notes from "./components/Notes/Notes";
 
 const App = () => {
-  if (!localStorage.getItem("username")) return <LoginForm />;
+  if (!localStorage.getItem("username")) return <LoginForm />; // To render components accordingly
 
   return (
     <div className="whole-container">
-      <ChatEngine
-        height="97vh" //  Entire screen
-        projectID="a8fce3be-91ef-4f85-be73-b4edae85130c" //   Connection to ChatEngine
-        userName={localStorage.getItem("username")} //   Currently logged in user
-        userSecret={localStorage.getItem("password")} //    Password
-        renderChatFeed={(props) => <ChatBox {...props} />}
-        onNewMessage={
-          () =>
-            new Audio(
-              "https://chat-engine-assets.s3.amazonaws.com/click.mp3"
-            ).play() // Sound effects
-        }
-      />
-      <LogoutButton />
+      <div className="toggle-container">
+        {/* Switching components at every path change  */}
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<ChatEngineComponent />} />
+            <Route exact path="/notes" element={<Notes />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+      {/* Button box to toggle between different components  */}
+      <ButtonBox />
     </div>
   );
 };
