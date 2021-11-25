@@ -1,3 +1,18 @@
+# Detailed Documentation of Prototype
+
+Link: ()
+
+# Screenshots
+
+<img width="1792" alt="Screenshot 2021-11-25 at 7 49 04 PM" src="https://user-images.githubusercontent.com/49520350/143457907-d6f89c29-6a98-4385-954b-a2f7b4151e2f.png">
+
+<img width="1792" alt="Screenshot 2021-11-25 at 7 49 41 PM" src="https://user-images.githubusercontent.com/49520350/143458088-d12760e5-832e-49f3-9b73-682bab1a8b6f.png">
+
+<img width="1792" alt="Screenshot 2021-11-25 at 7 50 07 PM" src="https://user-images.githubusercontent.com/49520350/143458108-126436bf-c7ce-4ed0-833c-36a3911c7a63.png">
+
+<img width="1792" alt="Screenshot 2021-11-25 at 7 50 30 PM" src="https://user-images.githubusercontent.com/49520350/143458139-88c74649-bc17-4f05-9b45-a6f716eea54a.png">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
