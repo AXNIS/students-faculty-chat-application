@@ -1,4 +1,4 @@
-# Detailed Documentation of Prototype
+# Project Highlight Document
 
 Link: ()
 
