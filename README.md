@@ -4,12 +4,12 @@ Link: ()
 
 # ChatEngine Credentials
 
-Email: blaze19axle@gmail.com
+Email: blaze19axle@gmail.com || 
 Password: Engage123
 
 # students-faculty-chat-application Credentials 
 
-Username: faculty
+Username: faculty || 
 Password: 123
 
 # Screenshots
