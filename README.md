@@ -2,6 +2,16 @@
 
 Link: ()
 
+# ChatEngine Credentials
+
+Email: blaze19axle@gmail.com
+Password: Engage123
+
+# students-faculty-chat-application Credentials 
+
+Username: faculty
+Password: 123
+
 # Screenshots
 
 <img width="1792" alt="Screenshot 2021-11-25 at 7 49 04 PM" src="https://user-images.githubusercontent.com/49520350/143457907-d6f89c29-6a98-4385-954b-a2f7b4151e2f.png">
