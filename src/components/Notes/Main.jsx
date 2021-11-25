@@ -1,8 +1,9 @@
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "react-markdown"; // which allows for updating only the changing DOM instead of completely overwriting.
 
 const Main = ({ activeNote, onUpdateNote }) => {
   const onEditField = (field, value) => {
     onUpdateNote({
+      // reconstructing the current active note
       ...activeNote,
       [field]: value,
       lastModified: Date.now(),
@@ -19,7 +20,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
           id="title"
           placeholder="Note Title"
           value={activeNote.title}
-          onChange={(e) => onEditField("title", e.target.value)}
+          onChange={(e) => onEditField("title", e.target.value)} // To show the continuous updates
           autoFocus
         />
         <textarea
